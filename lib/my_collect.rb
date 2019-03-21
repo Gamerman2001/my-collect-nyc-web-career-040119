@@ -1,13 +1,12 @@
 def my_collect(array)
   if block_given?
       i = 0 
-      judge = []
+      upper = []
       
       while i < array.length 
-        yield array[i]
-        judge.push(array[i])
+        upper.push(yield array[i])
         i += 1 
       end
-      judge
-  end 
-end
+      upper
+  end
+end  
