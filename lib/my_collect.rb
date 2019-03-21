@@ -5,7 +5,7 @@ def my_collect(array)
       
       while i < array.length 
         yield array[i]
-        judge.push(array[i])
+        judge.push(array)
         i += 1 
       end 
   end 
