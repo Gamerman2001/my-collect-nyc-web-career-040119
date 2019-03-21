@@ -5,9 +5,9 @@ def my_collect(array)
       
       while i < array.length 
         yield array[i]
-        judge.push(array)
+        judge.push(array[i])
         i += 1 
-      end 
+      end
+      judge
   end 
-  judge 
 end
