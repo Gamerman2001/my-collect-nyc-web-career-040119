@@ -1,5 +1,13 @@
-array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-my_collect(array) do |name|
-  name.split(" ").first
+def my_each(array)
+  if block_given?
+      i = 0 
+      judge = []
+      
+      while i < array.length 
+        yield array[i]
+        judge.push(array[i])
+        i += 1 
+      end 
+  end 
+  judge 
 end
-
